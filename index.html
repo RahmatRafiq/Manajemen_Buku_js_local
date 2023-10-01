@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Self Book Rahmat</title>
+  </head>
+  <body>
+    <section id="sidebar">
+      <a href="#" class="brand">
+     <i class='bx bxs-book'></i>
+        <span class="text">Self Book Rahmat</span>
+      </a>
+      <ul class="side-menu top">
+        <li class="active">
+          <a href="#">
+            <i class="bx bxs-dashboard"></i>
+            <span class="text">Dashboard</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="content">
+      <nav>
+        <i class="bx bx-menu"></i>
+        <div class="form-input">
+          <input type="text" id="search-input" placeholder="Cari berdasarkan judul">
+          <button class="search-btn">Cari</button>
+        </div>
+        <input type="checkbox" id="switch-mode" hidden />
+        <label for="switch-mode" class="switch-mode"></label>
+        <a href="#" class="notification">
+          <i class="bx bxs-bell"></i>
+        </a>
+        <a href="#" class="profile">
+          <img src="assets/img/profile.jpg" alt="Profile Image" />
+        </a>
+      </nav>
+
+      <main>
+        <div class="head-title">
+          <div class="left">
+            <h1>Form Buku</h1>
+          </div>
+        </div>
+        <ul class="box-info">
+          <li>
+         <i class='bx bx-checkbox-checked'></i>  
+            <span class="text">
+              <h3 class="selesai-count">0</h3>
+              <p>Selesai Dibaca</p>
+            </span>
+          </li>
+          <li>
+         <i class='bx bx-checkbox'></i>
+            <span class="text">
+              <h3 class="belum-selesai-count">0</h3>
+              <p>Belum Selesai Dibaca</p>
+            </span>
+          </li>
+        </ul>
+        <div class="table-data">
+          <div class="order">
+            <div class="head">
+              <h3>Masukkan Buku Baru</h3>
+            </div>
+            <form id="add-book-form">
+              <div class="form-input1">
+                  <input type="text" id="title" placeholder="Judul" required />
+                </div>
+                <div class="form-input1">
+                  <input type="text" id="author" placeholder="Penulis" required />
+                </div>
+                <div class="form-input1">
+                  <input type="number" id="year" placeholder="Tahun" required />
+                </div>
+                <div class="form-input1">
+                  <label for="isComplete">Selesai Dibaca</label>
+                  <input type="checkbox" id="isComplete" />
+                </div>
+                 <div class="form-input1">
+                   <button type="submit" class="search-btn">Tambahkan</button>
+                  </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="table-data">
+          <div class="order">
+         <div class="head">
+              <h3>Belum Selesai Dibaca</h3>
+            </div>
+            <table id="table-uncompleted">
+              <thead>
+                <tr>
+                  <th>Judul</th>
+                  <th>Penulis</th>
+                  <th>Tahun</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <div class="order">
+            <div class="head">
+              <h3>Selesai Dibaca</h3>
+            </div>
+            <table id="table-completed">
+              <thead>
+                <tr>
+                  <th>Judul</th>
+                  <th>Penulis</th>
+                  <th>Tahun</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </section>
+    <script src="assets/js/javascript.js"></script>
+  </body>
+</html>
